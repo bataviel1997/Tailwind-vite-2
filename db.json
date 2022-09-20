@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "email": "kupekequfy@mailinator.com",
+      "password": "$2a$10$AQgO6GRMBp93hGkEGQ9xEOaOagQdq2Is5deI9T8ex3g3nvqsxXWsm",
+      "id": 1
+    },
+    {
+      "email": "kicud@mailinator.com",
+      "password": "$2a$10$StPbJ6yQbSv2G8UNSJLFAOa.BO26M6LdJSpE8CTcv.zFWu1QzwXfi",
+      "id": 2
+    }
+  ],
+  "blogs": []
+}
