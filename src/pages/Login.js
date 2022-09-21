@@ -1,6 +1,29 @@
 import Nav_bar from "../components/Navbar"
-
+import axios from "axios"
 const app = document.getElementById('app')
+window.handleLogin = (event)=>{
+    event.preventDefault()
+// mendapatkan value user yang di input
+    let email = event.target.email.value
+    let password = event.target.password.value
+
+    axios.post('http://localhost:3000/login', {
+        email : email,
+        password : password
+    })
+    .then((res)=>{
+        alert('Berhasil Login')
+        localStorage.setItem('userData', JSON.stringify(res.data))
+        window.location.href = '/'
+    })
+    .catch((err)=>{
+        alert('Terjadi Kesalahan')
+        console.error(err)
+    })
+
+
+
+}
 
 export default function Login(){
     document.title= "Login Page"
@@ -9,9 +32,9 @@ export default function Login(){
     ${Nav_bar()}
     <div class="w-screen min-h-screen max-w-[1440px] mx-auto p-4">
     
-    <h1 class="text-orange-500">Login Page</h1>
+    <h1 class="text-orange-500"></h1>
 
-    <form class="w-[320px] flex flex-col gap-4 mx-auto" >
+    <form class="w-[320px] flex flex-col gap-4 mx-auto" onsubmit="handleLogin(event)">
 
     <div class="flex flex-col gap-2 font-light">
         <label for="email">Email</label>

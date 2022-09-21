@@ -9,7 +9,46 @@
       "email": "kicud@mailinator.com",
       "password": "$2a$10$StPbJ6yQbSv2G8UNSJLFAOa.BO26M6LdJSpE8CTcv.zFWu1QzwXfi",
       "id": 2
+    },
+    {
+      "email": "qyqyf@mailinator.com",
+      "password": "$2a$10$fkv0r9XYqjrDagOwCX55GuH23./3uZecwYbbCZjvphbqmZR9SAYAW",
+      "id": 3
+    },
+    {
+      "email": "luqmansa66@gmail.com",
+      "password": "$2a$10$Nrj6VkB1y/E30vdxF42Un.l1g5CVvIddg3ksPhgX.7uEjLG0y4iEy",
+      "id": 4
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$XM4o98WJjvH5cecIIZxr.OH1wAhXkQJgpK3gn7FOekZaOSf9GyHpa",
+      "id": 5
+    },
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$t/GSKc/bFb8sIe8ZfUR/t.RHNl5GTwA4KH6N0ocksRUSKNnOLmMkS",
+      "id": 6
     }
   ],
-  "blogs": []
+  "blogs": [
+    {
+      "userId": 6,
+      "author": "admin@admin.com",
+      "judul": "test",
+      "img": "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "content": "                aaaaaaaaaa",
+      "createdAt": "21/9/2022",
+      "id": 1
+    },
+    {
+      "userId": 6,
+      "author": "admin@admin.com",
+      "judul": "belajar",
+      "img": "https://images.pexels.com/photos/7088304/pexels-photo-7088304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "content": "aaa",
+      "createdAt": "21/9/2022",
+      "id": 2
+    }
+  ]
 }

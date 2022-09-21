@@ -42,7 +42,7 @@ export default function Register(){
     ${Nav_bar()}
     <div class="w-screen min-h-screen max-w-[1440px] mx-auto p-4">
     
-    <h1 class="text-orange-500">Register Page</h1>
+    <h1 class="text-orange-500"></h1>
 
         <form class="w-[320px] flex flex-col gap-4 mx-auto" onsubmit="handle_register(event)">
 
