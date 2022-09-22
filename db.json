@@ -49,6 +49,24 @@
       "content": "aaa",
       "createdAt": "21/9/2022",
       "id": 2
+    },
+    {
+      "userId": 6,
+      "author": "admin@admin.com",
+      "judul": "pemandangan padang pasir",
+      "img": "https://images.pexels.com/photos/273935/pexels-photo-273935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "content": "ini adalah padang pasir di arab ",
+      "createdAt": "22/9/2022",
+      "id": 3
+    },
+    {
+      "userId": 6,
+      "author": "admin@admin.com",
+      "judul": "pemandangan pohon",
+      "img": "https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "content": "pohon warna ungu",
+      "createdAt": "22/9/2022",
+      "id": 4
     }
   ]
 }

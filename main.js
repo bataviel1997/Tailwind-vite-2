@@ -1,5 +1,6 @@
 import not_found from './src/pages/404'
 import addBlog from './src/pages/addBlog'
+import Details from './src/pages/Detail'
 import Home from './src/pages/Home'
 import Login from './src/pages/Login'
 import Register from './src/pages/Register'
@@ -26,6 +27,10 @@ switch(page){
       case "/addBlog":
         userData? addBlog() : window.location.href ='/login'
       break
+
+      case "/details":
+        Details()
+        break
 
 
       default:

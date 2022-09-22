@@ -3,31 +3,28 @@ import Nav_bar from "../components/Navbar"
 
 const app = document.getElementById('app')
 
-export default function Home(){
-    // ubah document title
-    document.title= "Home Page"
 
-    axios.get('http://localhost:3000/blogs')
-    .then(res=>{
-        console.info(res)
+export default function Home(){
+    // ubah documen title
+    document.title = 'Home Page'
+
+    // mendapatkan data dari table blogs
+    axios.get('http://localhost:3000/blogs?_sort=id&_order=desc')
+    .then((res) => {
         app.innerHTML += Nav_bar()
         res.data.forEach((e)=>{
             app.innerHTML += `
-            <div class="flex flex-col gap-4 max-w-[900px] bg-white shadow-md p-6 my-4 mx-auto">
-                <h1>${e.judul}</h1>
-                <small>${e.author}</small>
-                <img src="${e.img}" alt="${e.judul}" class="w-full h-[200px] object-cover"  />
+            <a href="/details?id=${e.id}" class="bg-white p-6 flex flex-col rounded-md my-6 max-w-[700px] shadow-md mx-auto">
+                <h1 class=" text-2xl">${e.judul}</h1>
+                <small>${e.author} - ${e.createdAt} </small>
+                <img src="${e.img}" alt="${e.judul}" class="h-[280px] object-cover my-4 rounded-lg"/>
                 <p>${e.content}</p>
-            </div>
+            </a>
             `
         })
     })
+    .catch((err)=>{
+        console.error(err)
 
-    // app.innerHTML =`
-    // ${Nav_bar()}
-    // <div class="w-screen min-h-screen max-w-[1440px] mx-auto p-4">
-    
-    // <h1 class="text-orange-500"></h1>
-    // </div>
-    // `
+    })
 }
